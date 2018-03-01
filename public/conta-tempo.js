@@ -2,9 +2,8 @@ class ExampleApplication extends React.Component {
   render() {
     var elapsed = Math.round(this.props.elapsed  / 100);
     var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
-    var message =
-      `O React está rodando a ${seconds} segundos.`;
-      return <p>{message}</p>;
+    var message = `O React está rodando a ${seconds} segundos.`;
+    return <p>{message}</p>;
   }
 }
 
